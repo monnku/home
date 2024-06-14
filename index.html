@@ -42,12 +42,13 @@
             </section>
             <section id="saishin">
                 <h2>最新(かもしれない)情報</h2>
-                <button onclick="messagecount()">メッセージカウント</button>
+                <button onclick="message()">今の気持ち</button>
                 <button onclick="window.open('https://scratch.mit.edu/projects/964800258/')">自信作</button>
             </section>
             <script>
-                function messagecount(){
-                    alert('メッセージカウント:' + (await fetch("https://api.scratch.mit.edu/users/monnku/messages/count/")).json()["count"]);
+                function message(){
+                    alert('( ﾟДﾟ)ﾈﾑﾋｰ');
+                    setTimeOut(function(){alert('時差をこえて(つ∀-)ｵﾔｽﾐｰ');}, 5000);
                 }
             </script>
         </main>
