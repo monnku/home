@@ -3,43 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>サンプルサイト</title>
+    <title>もんくのホームページ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>サンプルサイトへようこそ</h1>
-            <p>シンプルでモダンなデザインのサンプルサイトです。</p>
+            <h1>もんくのホームページへようこそ!</h1>
+            <p>monnkuのホームページです。</p>
         </header>
         
         <nav>
             <a href="#home">ホーム</a>
-            <a href="#about">アバウト</a>
-            <a href="#services">サービス</a>
-            <a href="#contact">お問い合わせ</a>
+            <a href="#aboutme">私について</a>
+            <a href="#saishin">最新かもしれない情報</a>
         </nav>
         
         <main>
             <section id="home">
                 <h2>ホーム</h2>
-                <p>これはサンプルのホームページセクションです。ここにサイトの紹介や最新情報などを掲載します。</p>
+                <p>常にひまなふりをしている凡人のサイトです。</p>
+                <p>時間も気にせずゆっくりしていってね！！！</p>
+                <p>関連サイト</p>
+                <a href="https://scratch.mit.edu/users/monnku_lv6/">monnku_lv6</a>
+                <a href="https://scratch.mit.edu/users/monnku/">monnku</a>
+                <a href="https://github.com/monnku/">github</a>
+                <a href="https://tact-aimchat.glitch.me/">TACT-AIMのチャットサイト</a>
             </section>
-
-            <section id="about">
-                <h2>アバウト</h2>
-                <p>このセクションでは、サイトや会社についての情報を提供します。</p>
+            <section id="aboutme">
+                <h2>私について</h2>
+                <p>monnkuについて</p>
+                <p>・scratcherです。</p>
+                <p>・pythonとJSやってます。</p>
+                <p>・学生です。</p>
+                <p>・<marquee width="70" scrollamount="15" behavior="alternate">好きな顔文字はヽ(ﾟ∀｡)ﾉｳｪです。</marquee></p>
+                <p>・TACT-AIMが大好きです!</p>
+                <button onclick="window.open('https://turbowarp.org/831274817?hqpen');">TACT-AIMに飛ぶ</button>
             </section>
-
-            <section id="services">
-                <h2>サービス</h2>
-                <p>ここでは提供しているサービスの詳細を紹介します。</p>
-                <a href="#contact" class="button">お問い合わせ</a>
+            <section id="saishin">
+                <h2>最新(かもしれない)情報</h2>
+                <button onclick="messagecount()">メッセージカウント</button>
+                <button onclick="window.open('https://scratch.mit.edu/projects/964800258/')">自信作</button>
             </section>
+            <script>
+                function messagecount(){
+                    alert('メッセージカウント:' + (await fetch("https://api.scratch.mit.edu/users/monnku/messages/count/")).json()["count"]);
+                }
+            </script>
         </main>
 
         <footer>
-            <p>&copy; 2024 サンプルサイト. すべての権利を保有します。</p>
+            <p>もんもんもんく♪もんくのもんもん♪</p>
         </footer>
     </div>
 </body>
