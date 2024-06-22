@@ -113,7 +113,8 @@ footer p {
 }
 
 .rot{
-    animation: linear 5s infinite rotate;
+    transform-origin: center center 0;
+    animation: ease-in-out 5s infinite rotate;
 }
 
 /* レスポンシブ対応 */
