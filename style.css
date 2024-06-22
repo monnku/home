@@ -113,7 +113,7 @@ footer p {
 }
 
 .rot{
-    animation: linear 1s infinite rotate;
+    animation: linear 5s infinite rotate;
 }
 
 /* レスポンシブ対応 */
