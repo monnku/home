@@ -107,6 +107,15 @@ footer p {
     background-color: #0056b3;
 }
 
+@keyframes rotate{
+  0%{ transform:rotate(0);}
+  100%{ transform:rotate(360deg); }
+}
+
+.rot{
+    animation: rotate 1s infinite;
+}
+
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
     nav {
