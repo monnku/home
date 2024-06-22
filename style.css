@@ -115,6 +115,7 @@ footer p {
 .rot{
     transform-origin: center center 0;
     animation: ease-in-out 5s infinite rotate;
+    display: inline-block;
 }
 
 /* レスポンシブ対応 */
